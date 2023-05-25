@@ -10,7 +10,7 @@ int main()
 
 	// Set Defaults
 	s.SetDefault(); 
-	l.SetDefault();
+	l.SetDefault(20, 20);
 	l.SetChars();
 
 	// Gameplay
@@ -19,7 +19,7 @@ int main()
 		system("cls");
 		Input(s, l);
 		Draw(s, l);
-		Sleep(4000);
+		Sleep(400);
 	}
 }
 
