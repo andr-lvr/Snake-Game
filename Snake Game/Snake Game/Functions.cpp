@@ -66,8 +66,11 @@ void Draw(Snake s, Logic l) {
 }
 
 void Input(Snake s, Logic l) {
-    if (_kbhit()) {
-        switch (_getch()) {
+    if (_kbhit()) 
+    {
+        char key = _getch();
+        switch (key)
+        {
             // Movement
         case 'w':
             s.dir = 1;
@@ -94,5 +97,24 @@ void Input(Snake s, Logic l) {
             l.isOver = true;
             break;
         }
+    }
+}
+
+void MainLogic(Snake s, Logic l)
+{
+    switch (s.dir)
+    {
+    case 1:
+        s.y--;
+        break;
+    case 2:
+        s.x--;
+        break;
+    case 3:
+        s.y++;
+        break;
+    case 4:
+        s.x++;
+        break;
     }
 }

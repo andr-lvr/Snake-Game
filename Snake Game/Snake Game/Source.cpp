@@ -18,7 +18,9 @@ int main()
 	{
 		system("cls");
 		Input(s, l);
+		MainLogic(s, l);
 		Draw(s, l);
+		cout << s.dir;
 		Sleep(400);
 	}
 }
