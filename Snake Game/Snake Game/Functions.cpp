@@ -13,7 +13,7 @@ void Draw(Snake s, Logic  l)
 		for (int j = 0; j < sX; j++)
 		{
 
-			a = ' ';
+			a = l.background;
 
 			// Top-Left Corner
 			if (i == 0 && j == 0)
