@@ -11,14 +11,15 @@ int main()
 	// Set Defaults
 	s.SetDefault(); 
 	l.SetDefault();
+	l.SetChars();
 
 	// Gameplay
-	while  (!l.isOver)
+	/*while  (!l.isOver)
 	{
 		system("cls");
 		Input(s, l);
 		Draw(s, l);
 		Sleep(4000);
-	}
+	}*/
 }
 

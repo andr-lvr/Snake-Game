@@ -1,4 +1,5 @@
 #pragma once
+#include "Libraries.h"
 
 struct Snake
 {
@@ -33,7 +34,20 @@ struct Logic
 			
 	void SetChars()
 	{
-	
+		ifstream Visuals("Data.txt");
+
+		if (Visuals.is_open()) 
+		{ 
+			string tp;
+
+			while (getline(Visuals, tp)) 
+			{  
+				cout << tp << "\n"; 
+			}
+
+			Visuals.close(); 
+		}
+
 	}
 
 	void SetDefault(int yT = 10, int xT = 10)

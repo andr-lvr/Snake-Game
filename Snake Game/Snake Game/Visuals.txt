@@ -1,0 +1,10 @@
+﻿Background:#
+TopLeftCorner:╔
+TopRightCorner:╗
+BottomLeftCorner:╚
+BottomRightCorner:╝
+HorizontalBorder:═
+VerticalBorder:║
+SnakeHead:@
+SnakeTail:0
+Apples:x
